@@ -12,7 +12,7 @@ assert(prismWeave, 'Prism Weave transform should be discoverable');
 
 const cases = [
     'hello world',
-    'ph1r3574r73r',
+    'ImJustTestingIt',
     'Hello World. <3 🌞'
 ];
 
@@ -27,10 +27,10 @@ const usernamePath = path.join(projectRoot, 'username.txt');
 const usernamePayload = fs.readFileSync(usernamePath, 'utf8').trim();
 
 assert(prismWeave.detector(usernamePayload), 'username.txt should contain Prism Weave output');
-assert.strictEqual(prismWeave.reverse(usernamePayload), 'ph1r3574r73r', 'username.txt should decode to the issue opener');
+assert.strictEqual(prismWeave.reverse(usernamePayload), 'ImJustTestingIt', 'username.txt should decode to the posting account');
 assert.strictEqual(
     usernamePayload,
-    'PW1:ratusotu-mitutumi-raramitu-ramitumi-sososotu-ratutura-sotumira-mimitura-tumimitu-tutumiso-tutumiso-tumimira~9c',
+    'PW1:rararaso-mirarami-mirarara-mimitumi-sososotu-mitutumi-somimiso-rasotutu-sosomimi-turamitu-somitumi-sosoratu-sososomi-misososo-sotusomi~f7',
     'username.txt should contain the expected obfuscated username'
 );
 
