@@ -16,7 +16,8 @@
     "test:universal": "node tests/test_universal.js",
     "test:emoji": "node tests/test_emoji_speak.js",
     "test:steg": "node tests/test_steganography_options.js",
-    "test:all": "npm run test:universal && npm run test:emoji && npm run test:steg",
+    "test:prism": "node tests/test_prism_weave.js",
+    "test:all": "npm run test:universal && npm run test:emoji && npm run test:steg && npm run test:prism",
     "precommit": "npm run test:all"
   },
   "repository": {
