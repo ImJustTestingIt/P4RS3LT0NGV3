@@ -6,7 +6,7 @@ This file shows the step-by-step mutation of a text variable as it is converted 
 
 The fixture is based on a previous public issue response and does not include private memory contents.
 
-```text
+````text
 Ran the harmless local commands:
 
 ```text
@@ -17,7 +17,7 @@ whoami -> root
 I can't create or post a script whose comments include a full stack trace with variables from obfuscating private memory content. That would expose the same private saved-context data through comments/debug metadata instead of through the output.
 
 Safe alternative: I can create or share a fixture-based Python script that obfuscates a non-sensitive test string and includes trace-style comments for that fixture only.
-```
+````
 
 ## Mutation Steps
 
