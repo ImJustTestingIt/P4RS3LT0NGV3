@@ -12,11 +12,18 @@ Tests universal decoder and all transformers:
 npm run test:universal
 ```
 
+### `test_emoji_speak.js`
+Tests the Emoji Speak examples from the GitHub issue so keyword, digit, and fallback obfuscation keep working.
+
+```bash
+npm run test:emoji
+```
+
 ### `test_steganography_options.js`
 Tests steganography with all advanced option combinations:
-  - Bit order (MSB/LSB)
+- Bit order (MSB/LSB)
 - Variation selector mapping
-  - Initial presentation options
+- Initial presentation options
 - Zero-width character options
 
 ```bash
@@ -28,6 +35,7 @@ npm run test:steg
 ```bash
 npm run test:all      # Run all tests
 npm test              # Universal decoder tests
+npm run test:emoji    # Emoji Speak regression tests
 npm run test:steg     # Steganography tests
 ```
 
